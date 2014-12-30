@@ -1,4 +1,5 @@
 [{
+    "id": 1,
     "boris": 3,
     "team": "Seahawks",
     "team_ranking": 1,
@@ -9,7 +10,8 @@
     "injured": false,
     "hot": 2
 }, {
-    "boris": null,
+    "id": 2,
+    "boris": 1,
 	"team": "Seahawks",
     "team_ranking": 1,
     "player": "Defense",
@@ -19,7 +21,8 @@
     "injured": false,
     "hot": 2
 }, {
-    "boris": null,
+    "id": 3,
+    "boris": 4,
 	"team": "Seahawks",
     "team_ranking": 1,
     "player": "Russel Wilson",
@@ -29,6 +32,7 @@
     "injured": false,
     "hot": 1
 }, {
+    "id": 4,
     "boris": null,
 	"team": "Seahawks",
     "team_ranking": 1,
@@ -39,6 +43,7 @@
     "injured": false,
     "hot": 1
 }, {
+    "id": 5,
     "boris": null,
 	"team": "Seahawks",
     "team_ranking": 1,
@@ -49,6 +54,7 @@
     "injured": false,
     "hot": 1
 }, {
+    "id": 6,
     "boris": null,
 	"team": "Seahawks",
     "team_ranking": 1,
@@ -59,6 +65,7 @@
     "injured": false,
     "hot": 1
 }, {
+    "id": 1,
     "boris": null,
 	"team": "Patriots",
     "team_ranking": 2,
@@ -69,7 +76,8 @@
     "injured": false,
     "hot": 1
 }, {
-    "boris": null,
+    "id": 1,
+    "boris": 2,
 	"team": "Patriots",
     "team_ranking": 2,
     "player": "Rob Gronkowski",
@@ -79,7 +87,8 @@
     "injured": true,
     "hot": 1
 }, {
-    "boris": null,
+    "id": 1,
+    "boris": 4,
 	"team": "Patriots",
     "team_ranking": 2,
     "player": "Defense",
@@ -89,7 +98,8 @@
     "injured": false,
     "hot": 1
 }, {
-    "boris": null,
+    "id": 1,
+    "boris": 9,
 	"team": "Patriots",
     "team_ranking": 2,
     "player": "Tom Brady",
@@ -99,6 +109,7 @@
     "injured": true,
     "hot": 0
 }, {
+    "id": 1,
     "boris": null,
 	"team": "Patriots",
     "team_ranking": 2,
@@ -109,7 +120,8 @@
     "injured": true,
     "hot": 1
 }, {
-    "boris": null,
+    "id": 1,
+    "boris": 10,
 	"team": "Patriots",
     "team_ranking": 2,
     "player": "Shane Vereen",
@@ -119,6 +131,7 @@
     "injured": true,
     "hot": 1
 }, {
+    "id": 1,
     "boris": null,
 	"team": "Patriots",
     "team_ranking": 2,
@@ -129,6 +142,7 @@
     "injured": true,
     "hot": 1
 }, {
+    "id": 1,
     "boris": null,
 	"team": "Patriots",
     "team_ranking": 2,
@@ -139,6 +153,7 @@
     "injured": false,
     "hot": 1
 }, {
+    "id": 1,
     "boris": null,
 	"team": "Patriots",
     "team_ranking": 2,
@@ -149,7 +164,8 @@
     "injured": true,
     "hot": 1
 }, {
-    "boris": null,
+    "id": 1,
+    "boris": 1,
     "team": "Packers",
     "team_ranking": 3,
     "player": "Aaron Rodgers",
@@ -159,7 +175,8 @@
     "injured": true,
     "hot": 2
 }, {
-    "boris": null,
+    "id": 1,
+    "boris": 5,
     "team": "Packers",
     "team_ranking": 3,
     "player": "Jordy Nelson",
@@ -169,6 +186,7 @@
     "injured": false,
     "hot": 2
 }, {
+    "id": 1,
     "boris": 4,
 	"team": "Packers",
 	"team_ranking": 3,
@@ -179,6 +197,7 @@
     "injured": false,
     "hot": 1
 }, {
+    "id": 1,
     "boris": null,
 	"team": "Packers",
 	"team_ranking": 3,
@@ -189,7 +208,8 @@
     "injured": false,
     "hot": 1
 }, {
-    "boris": null,
+    "id": 1,
+    "boris": 7,
 	"team": "Packers",
 	"team_ranking": 3,
     "player": "Randall Cobb",
@@ -199,7 +219,8 @@
     "injured": false,
     "hot": 2
 }, {
-    "boris": null,
+    "id": 1,
+    "boris": 5,
 	"team": "Packers",
 	"team_ranking": 3,
     "player": "Defense",
@@ -209,6 +230,7 @@
     "injured": false,
     "hot": 1
 }, {
+    "id": 1,
     "boris": null,
 	"team": "Packers",
 	"team_ranking": 3,
@@ -219,6 +241,7 @@
     "injured": false,
     "hot": 1
 }, {
+    "id": 1,
     "boris": null,
 	"team": "Packers",
 	"team_ranking": 3,
@@ -229,7 +252,8 @@
     "injured": false,
     "hot": 1
 }, {
-    "boris": null,
+    "id": 1,
+    "boris": 2,
 	"team": "Broncos",
 	"team_ranking": 4,
     "player": "Peyton Manning",
@@ -239,7 +263,8 @@
     "injured": true,
     "hot": 0
 }, {
-    "boris": 6,
+    "id": 1,
+    "boris": 2,
 	"team": "Broncos",
 	"team_ranking": 4,
     "player": "Demaryius Thomas",
@@ -249,7 +274,8 @@
     "injured": true,
     "hot": 2
 }, {
-    "boris": null,
+    "id": 1,
+    "boris": 9,
 	"team": "Broncos",
 	"team_ranking": 4,
     "player": "Emmanuel Sanders",
@@ -259,7 +285,8 @@
     "injured": true,
     "hot": 1
 }, {
-    "boris": null,
+    "id": 1,
+    "boris": 3,
 	"team": "Broncos",
 	"team_ranking": 4,
     "player": "Julius Thomas",
@@ -269,6 +296,7 @@
     "injured": true,
     "hot": 1
 }, {
+    "id": 1,
     "boris": 2,
 	"team": "Broncos",
 	"team_ranking": 4,
@@ -279,7 +307,8 @@
     "injured": true,
     "hot": 1
 }, {
-    "boris": null,
+    "id": 1,
+    "boris": 3,
 	"team": "Broncos",
 	"team_ranking": 4,
     "player": "Defense",
@@ -289,6 +318,7 @@
     "injured": false,
     "hot": 1
 }, {
+    "id": 1,
     "boris": null,
 	"team": "Broncos",
 	"team_ranking": 4,
@@ -299,6 +329,7 @@
     "injured": false,
     "hot": 1
 }, {
+    "id": 1,
     "boris": null,
     "team": "Cowboys",
     "team_matchup": "vs. Lions",
@@ -310,7 +341,8 @@
     "injured": true,
     "hot": 2
 }, {
-    "boris": null,
+    "id": 1,
+    "boris": 3,
 	"team": "Cowboys",
     "team_matchup": "vs. Lions",
 	"team_ranking": 5,
@@ -321,6 +353,7 @@
     "injured": false,
     "hot": 2
 }, {
+    "id": 1,
     "boris": null,
 	"team": "Cowboys",
     "team_matchup": "vs. Lions",
@@ -332,7 +365,8 @@
     "injured": false,
     "hot": 1
 }, {
-    "boris": null,
+    "id": 1,
+    "boris": 4,
 	"team": "Cowboys",
     "team_matchup": "vs. Lions",
 	"team_ranking": 5,
@@ -343,7 +377,8 @@
     "injured": false,
     "hot": 1
 }, {
-    "boris": null,
+    "id": 1,
+    "boris": 3,
 	"team": "Cowboys",
     "team_matchup": "vs. Lions",
 	"team_ranking": 5,
@@ -354,6 +389,7 @@
     "injured": false,
     "hot": 2
 }, {
+    "id": 1,
     "boris": null,
 	"team": "Cowboys",
     "team_matchup": "vs. Lions",
@@ -365,6 +401,7 @@
     "injured": false,
     "hot": 1
 }, {
+    "id": 1,
     "boris": null,
 	"team": "Cowboys",
     "team_matchup": "vs. Lions",
@@ -376,6 +413,7 @@
     "injured": false,
     "hot": 1
 }, {
+    "id": 1,
     "boris": null,
 	"team": "Cowboys",
     "team_matchup": "vs. Lions",
@@ -387,6 +425,7 @@
     "injured": false,
     "hot": 1
 }, {
+    "id": 1,
     "boris": null,
 	"team": "Cowboys",
     "team_matchup": "vs. Lions",
@@ -398,7 +437,8 @@
     "injured": false,
     "hot": 1
 }, {
-    "boris": null,
+    "id": 1,
+    "boris": 1,
 	"team": "Steelers",
     "team_matchup": "vs. Ravens",
 	"team_ranking": 6,
@@ -409,6 +449,7 @@
     "injured": false,
     "hot": 2
 }, {
+    "id": 1,
     "boris": 1,
 	"team": "Steelers",
     "team_matchup": "vs. Ravens",
@@ -420,7 +461,8 @@
     "injured": true,
     "hot": 1
 }, {
-    "boris": null,
+    "id": 1,
+    "boris": 6,
 	"team": "Steelers",
     "team_matchup": "vs. Ravens",
 	"team_ranking": 6,
@@ -431,6 +473,7 @@
     "injured": false,
     "hot": 1
 }, {
+    "id": 1,
     "boris": null,
 	"team": "Steelers",
     "team_matchup": "vs. Ravens",
@@ -442,6 +485,7 @@
     "injured": false,
     "hot": 1
 }, {
+    "id": 1,
     "boris": null,
 	"team": "Steelers",
     "team_matchup": "vs. Ravens",
@@ -453,6 +497,7 @@
     "injured": false,
     "hot": 1
 }, {
+    "id": 1,
     "boris": null,
 	"team": "Steelers",
     "team_matchup": "vs. Ravens",
@@ -464,6 +509,7 @@
     "injured": false,
     "hot": 1
 }, {
+    "id": 1,
     "boris": null,
 	"team": "Steelers",
     "team_matchup": "vs. Ravens",
@@ -475,6 +521,7 @@
     "injured": false,
     "hot": 1
 }, {
+    "id": 1,
     "boris": null,
 	"team": "Steelers",
     "team_matchup": "vs. Ravens",
@@ -486,7 +533,8 @@
     "injured": false,
     "hot": 1
 }, {
-    "boris": null,
+    "id": 1,
+    "boris": 8,
 	"team": "Colts",
     "team_matchup": "vs. Bengals",
 	"team_ranking": 7,
@@ -497,6 +545,7 @@
     "injured": false,
     "hot": 0
 }, {
+    "id": 1,
     "boris": null,
 	"team": "Colts",
     "team_matchup": "vs. Bengals",
@@ -508,7 +557,8 @@
     "injured": false,
     "hot": 1
 }, {
-    "boris": null,
+    "id": 1,
+    "boris": 5,
 	"team": "Colts",
     "team_matchup": "vs. Bengals",
 	"team_ranking": 7,
@@ -519,6 +569,7 @@
     "injured": false,
     "hot": 1
 }, {
+    "id": 1,
     "boris": null,
 	"team": "Colts",
     "team_matchup": "vs. Bengals",
@@ -530,6 +581,7 @@
     "injured": true,
     "hot": 1
 }, {
+    "id": 1,
     "boris": null,
 	"team": "Colts",
     "team_matchup": "vs. Bengals",
@@ -541,6 +593,7 @@
     "injured": false,
     "hot": 1
 }, {
+    "id": 1,
     "boris": null,
 	"team": "Colts",
     "team_matchup": "vs. Bengals",
@@ -552,7 +605,8 @@
     "injured": true,
     "hot": 1
 }, {
-    "boris": null,
+    "id": 1,
+    "boris": 11,
 	"team": "Colts",
     "team_matchup": "vs. Bengals",
 	"team_ranking": 7,
@@ -563,6 +617,7 @@
     "injured": false,
     "hot": 1
 }, {
+    "id": 1,
     "boris": null,
 	"team": "Colts",
     "team_matchup": "vs. Bengals",
@@ -574,6 +629,7 @@
     "injured": true,
     "hot": 1
 }, {
+    "id": 1,
     "boris": null,
 	"team": "Colts",
     "team_matchup": "vs. Bengals",
@@ -585,7 +641,8 @@
     "injured": false,
     "hot": 1
 }, {
-    "boris": null,
+    "id": 1,
+    "boris": 1,
 	"team": "Panthers",
     "team_matchup": "vs. Cardinals",
 	"team_ranking": 8,
@@ -594,8 +651,9 @@
     "position": "TE",
     "ranking": 3,
     "injured": false,
-    "hot": 1
+    "hot": 2
 }, {
+    "id": 1,
     "boris": null,
 	"team": "Panthers",
     "team_matchup": "vs. Cardinals",
@@ -607,7 +665,8 @@
     "injured": false,
     "hot": 1
 }, {
-    "boris": null,
+    "id": 1,
+    "boris": 8,
 	"team": "Panthers",
     "team_matchup": "vs. Cardinals",
 	"team_ranking": 8,
@@ -618,7 +677,8 @@
     "injured": false,
     "hot": 1
 }, {
-    "boris": null,
+    "id": 1,
+    "boris": 5,
 	"team": "Panthers",
     "team_matchup": "vs. Cardinals",
 	"team_ranking": 8,
@@ -629,6 +689,7 @@
     "injured": false,
     "hot": 1
 }, {
+    "id": 1,
     "boris": null,
 	"team": "Panthers",
     "team_matchup": "vs. Cardinals",
@@ -640,6 +701,7 @@
     "injured": false,
     "hot": 1
 }, {
+    "id": 1,
     "boris": 6,
 	"team": "Panthers",
     "team_matchup": "vs. Cardinals",
@@ -651,18 +713,20 @@
     "injured": false,
     "hot": 1
 }, {
+    "id": 1,
     "boris": null,
 	"team": "Cardinals",
     "team_matchup": "@ Panthers",
 	"team_ranking": 9,
     "player": "Chandler Catanzaro",
-    "player_image": "/images/chandler_catazaro.jpg",
+    "player_image": "/images/chandler_catanzaro.jpg",
     "position": "K",
     "ranking": 13,
     "injured": false,
     "hot": 1
 }, {
-    "boris": null,
+    "id": 1,
+    "boris": 6,
 	"team": "Cardinals",
     "team_matchup": "@ Panthers",
 	"team_ranking": 9,
@@ -673,6 +737,7 @@
     "injured": false,
     "hot": 1
 }, {
+    "id": 1,
     "boris": null,
 	"team": "Cardinals",
     "team_matchup": "@ Panthers",
@@ -684,6 +749,7 @@
     "injured": false,
     "hot": 1
 }, {
+    "id": 1,
     "boris": null,
 	"team": "Cardinals",
     "team_matchup": "@ Panthers",
@@ -695,6 +761,7 @@
     "injured": true,
     "hot": 1
 }, {
+    "id": 1,
     "boris": null,
 	"team": "Cardinals",
     "team_matchup": "@ Panthers",
@@ -706,6 +773,7 @@
     "injured": false,
     "hot": 1
 }, {
+    "id": 1,
     "boris": null,
 	"team": "Cardinals",
     "team_matchup": "@ Panthers",
@@ -717,6 +785,7 @@
     "injured": false,
     "hot": 1
 }, {
+    "id": 1,
     "boris": 5,
 	"team": "Bengals",
     "team_matchup": "@ Colts",
@@ -728,6 +797,7 @@
     "injured": false,
     "hot": 1
 }, {
+    "id": 1,
     "boris": null,
 	"team": "Bengals",
     "team_matchup": "@ Colts",
@@ -739,6 +809,7 @@
     "injured": true,
     "hot": 1
 }, {
+    "id": 1,
     "boris": null,
 	"team": "Bengals",
     "team_matchup": "@ Colts",
@@ -750,6 +821,7 @@
     "injured": false,
     "hot": 1
 }, {
+    "id": 1,
     "boris": null,
 	"team": "Bengals",
     "team_matchup": "@ Colts",
@@ -761,7 +833,8 @@
     "injured": false,
     "hot": 1
 }, {
-    "boris": null,
+    "id": 1,
+    "boris": 10,
 	"team": "Bengals",
     "team_matchup": "@ Colts",
 	"team_ranking": 10,
@@ -772,7 +845,8 @@
     "injured": false,
     "hot": 1
 }, {
-    "boris": null,
+    "id": 1,
+    "boris": 8,
 	"team": "Bengals",
     "team_matchup": "@ Colts",
 	"team_ranking": 10,
@@ -783,7 +857,8 @@
     "injured": false,
     "hot": 2
 }, {
-    "boris": null,
+    "id": 1,
+    "boris": 6,
 	"team": "Bengals",
     "team_matchup": "@ Colts",
 	"team_ranking": 10,
@@ -794,6 +869,7 @@
     "injured": true,
     "hot": 1
 }, {
+    "id": 1,
     "boris": null,
 	"team": "Bengals",
     "team_matchup": "@ Colts",
@@ -805,7 +881,8 @@
     "injured": false,
     "hot": 1
 }, {
-    "boris": null,
+    "id": 1,
+    "boris": 10,
 	"team": "Lions",
     "team_matchup": "@ Cowboys",
 	"team_ranking": 11,
@@ -816,6 +893,7 @@
     "injured": false,
     "hot": 1
 }, {
+    "id": 1,
     "boris": 7,
 	"team": "Lions",
     "team_matchup": "@ Cowboys",
@@ -827,6 +905,7 @@
     "injured": false,
     "hot": 1
 }, {
+    "id": 1,
     "boris": null,
 	"team": "Lions",
     "team_matchup": "@ Cowboys",
@@ -838,7 +917,8 @@
     "injured": false,
     "hot": 1
 }, {
-    "boris": null,
+    "id": 1,
+    "boris": 7,
 	"team": "Lions",
     "team_matchup": "@ Cowboys",
 	"team_ranking": 11,
@@ -849,7 +929,8 @@
     "injured": false,
     "hot": 1
 }, {
-    "boris": null,
+    "id": 1,
+    "boris": 4,
 	"team": "Lions",
     "team_matchup": "@ Cowboys",
 	"team_ranking": 11,
@@ -860,6 +941,7 @@
     "injured": true,
     "hot": 2
 }, {
+    "id": 1,
     "boris": null,
 	"team": "Lions",
     "team_matchup": "@ Cowboys",
@@ -871,7 +953,8 @@
     "injured": false,
     "hot": 1
 }, {
-    "boris": null,
+    "id": 1,
+    "boris": 9,
 	"team": "Lions",
     "team_matchup": "@ Cowboys",
 	"team_ranking": 11,
@@ -882,7 +965,8 @@
     "injured": false,
     "hot": 1
 }, {
-    "boris": null,
+    "id": 1,
+    "boris": 2,
 	"team": "Ravens",
     "team_matchup": "@ Steelers",
 	"team_ranking": 12,
@@ -893,6 +977,7 @@
     "injured": false,
     "hot": 1
 }, {
+    "id": 1,
     "boris": null,
 	"team": "Ravens",
     "team_matchup": "@ Steelers",
@@ -904,6 +989,7 @@
     "injured": false,
     "hot": 1
 }, {
+    "id": 1,
     "boris": null,
 	"team": "Ravens",
     "team_matchup": "@ Steelers",
@@ -915,7 +1001,8 @@
     "injured": false,
     "hot": 1
 }, {
-    "boris": null,
+    "id": 1,
+    "boris": 11,
 	"team": "Ravens",
     "team_matchup": "@ Steelers",
 	"team_ranking": 12,
@@ -926,6 +1013,7 @@
     "injured": false,
     "hot": 1
 }, {
+    "id": 1,
     "boris": null,
 	"team": "Ravens",
     "team_matchup": "@ Steelers",
@@ -937,6 +1025,7 @@
     "injured": false,
     "hot": 1
 }, {
+    "id": 1,
     "boris": null,
 	"team": "Ravens",
     "team_matchup": "@ Steelers",
@@ -948,6 +1037,7 @@
     "injured": false,
     "hot": 1
 }, {
+    "id": 1,
     "boris": null,
 	"team": "Ravens",
     "team_matchup": "@ Steelers",

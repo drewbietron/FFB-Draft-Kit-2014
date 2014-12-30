@@ -1,0 +1,116 @@
+<!-- <div class="jumbotron">
+  <h1>'Allo, 'Allo!</h1>
+  <p class="lead">
+    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
+    Always a pleasure scaffolding your apps.
+  </p>
+  <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+</div> -->
+<nav>
+
+    <div ng-model="player.view">
+        <ul class="nav__views">
+            <li class="nav__icon"><i ng-class="{'view__active':player.view == 'Available'}" class="fa fa-check" ng-click="player.view = 'Available'; viewTab = 'available'" ng-init="player.view = 'Available'"></i></li>
+            <li class="nav__icon" ng-if="taken.length > 0"><i ng-class="{'view__active':player.view == 'Taken'}"  class="fa fa-times" ng-click="player.view = 'Taken'; viewTab = 'drafted'"></i></li>
+        </ul>
+    </div>
+
+    <ul class="nav__filter">
+        <li class="nav__icon" ng-class="{'active':selectedTab === 'boris'}"><i class="fa fa-area-chart" ng-click="itemOrder = 'boris'; reverse=false; selectedTab = 'boris'" ng-init="selectedTab = 'boris'"></i>Boris</li>
+        <li class="nav__icon" ng-class="{'active':selectedTab === 'trk'}"><i class="fa fa-list-ul" ng-click="itemOrder = 'team_ranking'; reverse=false; selectedTab = 'trk'"></i>TRK</li>
+        <li class="nav__icon" ng-class="{'active':selectedTab === 'hot'}"><i class="fa fa-line-chart" ng-click="itemOrder = 'hot'; reverse=false; selectedTab = 'hot'"></i>HOT</li>
+        <li class="nav__icon" ng-class="{'active':selectedTab === 'prk'}"><i class="fa fa-bar-chart" ng-click="itemOrder = 'ranking'; reverse=false; selectedTab = 'prk'"></i>PRK</li>
+    </ul>
+
+    <input class="nav__search" ng-model="query.player" type="text" placeholder="Search">
+
+</nav>
+
+<div ng-if="player.view == 'Available'">
+
+    <div class="player__list-container">
+
+    <h2 class="text-center jumbotron">Available Players</h2>
+
+        <ul class="repeated-item" ng-repeat="player in players | orderBy: 'boris' | orderBy:itemOrder:reverse | filter:query">
+
+            <div class="player__list" ng-class="isTaken[$index]">
+    
+                <li class="player__image">
+                    <img src="{{player.player_image}}" alt="">
+                </li>
+
+                <li class="player__name">
+                    <b>{{player.player}} ({{player.position}})</b>
+                    <span ng-if="player.injured ==true"><i class="fa fa-plus"></i></span>
+                    <span ng-if="player.hot > 1"><i class="fa fa-star"></i></span>
+                    <span ng-if="player.hot < 1"><i class="fa fa-star star-cold"></i></span>
+                    <br> {{player.team}} {{player.team_matchup}}
+                    <br>
+                    <span class="player__info">
+            
+                    (
+                    <span ng-if="player.boris > 0"><i class="fa fa-area-chart"></i>  {{player.boris}} --</span>
+                        <i class="fa fa-list-ul"></i> {{player.team_ranking}} --
+                        <i class="fa fa-line-chart"></i> {{player.hot}} --
+                        <i class="fa fa-bar-chart"></i> {{player.ranking}} 
+                    </span>
+                    )
+
+                </li>
+
+                <!-- <i class="fa fa-times player__taken" ng-click="toggleClass($index)"></i> -->
+                <i class="fa fa-times player__taken" ng-click="toggleChecked(player); toggleClass($index)"></i>
+
+            </div>
+
+        </ul>
+
+    </div>
+
+</div>
+
+<div ng-if="player.view == 'Taken'">
+
+    <div class="player__list-container">
+
+    <h2 class="text-center jumbotron">Drafted Players</h2>
+
+        <ul class="repeated-item" ng-repeat="player in taken | filter:query">
+
+            <div class="player__list">
+
+                <li class="player__image">
+                    <img src="{{player.player_image}}" alt="">
+                </li>
+
+                <li class="player__name">
+                    <b>Pick #{{$index + 1}}</b>
+                    <br>
+                    <b>{{player.player}} ({{player.position}})</b>
+                    <span ng-if="player.injured ==true"><i class="fa fa-plus"></i></span>
+                    <span ng-if="player.hot > 1"><i class="fa fa-star"></i></span>
+                    <span ng-if="player.hot < 1"><i class="fa fa-star star-cold"></i></span>
+                    <br> {{player.team}} {{player.team_matchup}}
+                    <br>
+                    <span class="player__info">
+            
+                    (
+                    <span ng-if="player.boris > 0"><i class="fa fa-area-chart"></i>  {{player.boris}} --</span>
+                        <i class="fa fa-list-ul"></i> {{player.team_ranking}} --
+                        <i class="fa fa-line-chart"></i> {{player.hot}} --
+                        <i class="fa fa-bar-chart"></i> {{player.ranking}} 
+                    </span>
+                    )
+
+                </li>
+
+                <i class="fa fa-lock player__taken"></i>
+
+            </div>
+
+        </ul>
+
+    </div>
+
+</div>
