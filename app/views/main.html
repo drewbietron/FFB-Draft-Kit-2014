@@ -1,0 +1,61 @@
+<!-- <div class="jumbotron">
+  <h1>'Allo, 'Allo!</h1>
+  <p class="lead">
+    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
+    Always a pleasure scaffolding your apps.
+  </p>
+  <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+</div> -->
+<nav>
+<h3>OMFG MBL FFB</h3>
+<div class="filter">
+<i class="fa fa-area-chart"></i> Boris 
+<i class="fa fa-list-ul"></i> TRK 
+<i class="fa fa-line-chart"></i> HOT 
+<i class="fa fa-bar-chart"></i> PRK 
+</div>
+<!-- <ul class="filter">
+  <li ng-click="sort='player';"><input type="radio" name="sort">Name</input></li>
+  <li ng-click="sort='position'; reverse=!reverse"><input type="radio" name="sort">Position</input></li>
+  <li ng-click="sort='ranking'"><input type="radio" name="sort">PRK</input></li>
+  <li ng-click="sort='hot'; reverse=!reverse"><input type="radio" name="sort">Hot</input></li>
+  <li ng-click="sort='null'"><input type="radio" name="sort">Reset</input></li>
+</ul> -->
+</nav>
+
+<!-- <ul class="list__header">
+    <li class="player__team-ranking"></li>
+    <li class="player__team">Team</li>
+    <li class="player__name">Name</li>
+    <li class="player__position"></li>
+    <li class="player__ranking">PRK</li>
+    <li class="player__taken"></li>
+</ul> -->
+
+<div class="player__list-container">
+  <ul class="player__list" ng-repeat="player in players| filter:filter | orderBy: 'boris'">
+    <div class="player__list" ng-class="isGrey[$index]" >
+<!--       <li class="player__ranking">
+        
+      </li> -->
+      <li class="player__image"><img src="{{player.player_image}}" alt=""></li>
+      <li class="player__name" ng-class="hot">
+        <b>{{player.player}} ({{player.position}})</b> <span ng-if="player.injured ==true"><i class="fa fa-plus"></i></span> <span ng-if="player.hot > 1"><i class="fa fa-star"></i></span> <span ng-if="player.hot < 1"><i class="fa fa-star star-cold"></i></span>
+        <br>
+        {{player.team}} {{player.team_matchup}}
+        <br>
+        <span class="player__info">
+        (
+        <span ng-if="player.boris > 0"><i class="fa fa-area-chart"></i>  {{player.boris}} --</span>
+        <i class="fa fa-list-ul"></i> {{player.team_ranking}} --
+        <i class="fa fa-line-chart"></i> {{player.hot}} --
+        <i class="fa fa-bar-chart"></i> {{player.ranking}}
+        )
+        </span> 
+      </li>
+      
+      
+      <input type="checkbox" class="player__taken" ng-click="toggleClass($index)"></input>
+    </div>
+  </ul>
+</div>

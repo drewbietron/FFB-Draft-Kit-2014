@@ -1,0 +1,159 @@
+@import "reset";
+@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap";
+
+// $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+// bower:scss
+// endbower
+
+body {
+  color: #4f4f4f;
+  background-color: rgba(236, 240, 241,1.0);
+}
+
+nav {
+  width: 100%;
+  height: 75px;
+  @include flexbox-center();
+  position: fixed;
+  background-color: rgba(44, 62, 80,0.75);
+  color: rgba(236, 240, 241,1.0);
+  z-index: 5;
+  top: 0;
+  left: 0;
+  h3 {
+    padding-left: 15px;
+    color: rgba(236, 240, 241,1.0);
+    float: left;
+    width: 40%;
+    margin: 0;
+  }
+  .filter {
+
+    float: right;
+    width: 60%;
+    text-align: right;
+    font-size: 12px;
+    padding-right: 15px;
+    .fa {
+      font-size: 18px;
+      margin-left: 12px;
+      margin-right: 12px;
+    }
+  }
+}
+
+ul, .player__list {
+  width: 100%;
+  @include flexbox-center();
+  margin: 0;
+  li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    list-style: none;
+    float: left;
+    transition: all 0.35s;
+  }
+}
+
+.player__list-container {
+  margin-top: 75px;
+}
+
+.player__team-ranking {
+  width: 2.5%;
+  
+}
+
+.player__team {
+  width: 40%;
+}
+
+.player__image {
+  width: 30%;
+  img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: #bdc3c7;
+  }
+}
+
+.player__name {
+  width: 60%;
+}
+
+// .player__position {
+//   width: 20%;
+// }
+
+// .player__ranking {
+//   width: 2.5%;
+// }
+
+.player__taken {
+  width: 10%;
+}
+
+.player__hot {
+  color: #2ecc71;
+}
+
+.player__info {
+  font-size: 13px;
+}
+
+.is-grey-true {
+  background-color: #ccc;
+}
+
+.fa {
+  font-size: 16px;
+  margin: 2px;
+}
+
+.fa-plus {
+  color: #e74c3c;
+}
+
+.fa-star {
+  color: #27ae60;
+}
+
+.star-cold {
+  color: #3498db;
+}
+
+.error {
+  // -webkit-animation-duration: 1s;
+  //         animation-duration: 1s;
+  // -webkit-animation-fill-mode: both;
+  //         animation-fill-mode: both;
+  // -webkit-animation-name: wobble;
+  //         animation-name: wobble;
+  color: rgba(236, 240, 241,0.25);
+  background-color: #e74c3c;
+  .fa, i {
+    color: rgba(236, 240, 241,0.25);
+  }
+  img {
+    opacity: .15;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+}
+
+@media print {
+  @import "print";
+} 
+
+@media only screen and (min-width: 600px) {
+  .player__image {
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
