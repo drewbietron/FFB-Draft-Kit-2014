@@ -5,7 +5,7 @@
 
 ###Other rankings accounted for are team ranking, hotness factor (arbitrary), and position rank
 
-###Player images scraped from Google images 
-###Current injury status according to ESPN
+####Player images scraped from Google images 
+####Current injury status according to ESPN
 
-###JSON Data run through Angular for some fast action
+####JSON Data run through Angular for some fast action
