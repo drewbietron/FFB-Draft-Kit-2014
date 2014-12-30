@@ -9,7 +9,6 @@ Info n stuff
     - Team ranking
     - Hotness factor (arbitrary)
     - Position rank
-    - [Misc](#misc)
 - Misc Info
     - Player images scraped from Google images 
     - Current injury status according to ESPN
