@@ -15,6 +15,13 @@
         </ul>
     </div>
 
+    <script type="text/ng-template" id="customTemplate.html">
+      <a>
+          <img ng-src="{{player.player_image}}" width="16">
+          <span bind-html-unsafe="match.label | typeaheadHighlight:query"></span>
+      </a>
+    </script>
+
     <ul class="nav__filter">
         <li class="nav__icon" ng-class="{'active':selectedTab === 'boris'}"><i class="fa fa-area-chart" ng-click="itemOrder = 'boris'; reverse=false; selectedTab = 'boris'" ng-init="selectedTab = 'boris'"></i>Boris</li>
         <li class="nav__icon" ng-class="{'active':selectedTab === 'trk'}"><i class="fa fa-list-ul" ng-click="itemOrder = 'team_ranking'; reverse=false; selectedTab = 'trk'"></i>TRK</li>
@@ -22,7 +29,17 @@
         <li class="nav__icon" ng-class="{'active':selectedTab === 'prk'}"><i class="fa fa-bar-chart" ng-click="itemOrder = 'ranking'; reverse=false; selectedTab = 'prk'"></i>PRK</li>
     </ul>
 
-    <input class="nav__search" ng-model="query.player" type="text" placeholder="Search">
+    <div class="nav__search">
+        <script type="text/ng-template" id="customTemplate.html">
+          <a>
+              <img class="search__image" ng-src="{{match.model.player_image}}">
+              <span bind-html-unsafe="match.label | typeaheadHighlight:query"></span>
+          </a>
+        </script>
+        <div class="container-fluid">
+            <input type="text" ng-model="query" placeholder="Search For A Player" typeahead="player as player.player for player in players | filter:{player:$viewValue}" typeahead-template-url="customTemplate.html" class="form-control">
+        </div>
+    </div>
 
 </nav>
 
@@ -76,7 +93,7 @@
 
     <h2 class="text-center jumbotron">Drafted Players</h2>
 
-        <ul class="repeated-item" ng-repeat="player in taken | filter:query">
+        <ul class="repeated-item" ng-repeat="player in taken | filter:query | orderBy: 'boris' | orderBy:itemOrder:reverse">
 
             <div class="player__list">
 

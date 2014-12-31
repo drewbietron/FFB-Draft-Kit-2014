@@ -1,5 +1,6 @@
 @import "reset";
 @import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap";
+@import "mixins";
 @import "animate";
 // $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
 // bower:scss
@@ -47,17 +48,9 @@ nav {
         // margin-right: 12px;
       }
     }
-  .nav__views {
-    float: left;
-    width: 100%;
-    .nav__icon {
-      width: 50%;
-      margin-left: 25%;
-    }
-  }
   .nav__filter {
     float: right;
-    width: 100%;
+    width: 80%;
     .nav__icon {
       display: inline;
       width: 20%;
@@ -73,7 +66,11 @@ nav {
   }
 }
 
-ul, .player__list {
+.jumbotron {
+  background-color: $white-rgba-1;
+}
+
+.nav__filter, .player__list {
   width: 100%;
   @include flexbox-center();
   margin: 0;
@@ -117,6 +114,15 @@ ul, .player__list {
   }
 }
 
+.search__image {
+    width: 50px;
+    height: 50px;
+    margin-right: 12px;
+    border-radius: 50%;
+    margin-left: -5px;
+    background-color: $dark-white-rgba-1;
+}
+
 .player__name {
   width: 60%;
 }
@@ -139,24 +145,26 @@ ul, .player__list {
   background-color: $white-rgba-1;
 }
 
-.fa-check {
-  background-color: $dark-white-rgba-1;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  padding: 6px;
-  color: $green;
-}
-
 .nav__views {
-  .fa-times {
-    background-color: $dark-white-rgba-1;
+  @include flexbox-center();
+  // float: left;
+  width: 20%;
+  li {
+    display: inline;
+    width: 50%;
+  }
+  .fa-check, .fa-times {
     width: 30px;
     height: 30px;
     border-radius: 50%;
     padding: 6px;
+    background-color: $dark-white-rgba-1;
+    color: $green;
+  }
+  .fa-times {
+    margin-left: 50px;
+    background-color: $dark-white-rgba-1;
     color: $red-rgba-1;
-    margin-left: 50%;
   }
 }
 
@@ -227,12 +235,16 @@ ul, .player__list {
 @media only screen and (min-width: 600px) {
   nav {
     .filter {
-      width: 80%;
+      width: 40%;
     }
     .nav__search {
       display: inline;
-      width: 20%;
-      border-bottom: 1px dashed $white-rgba-25;
+      width: 40%;
+      input {
+        width: 100%;
+        // border-bottom: 1px dashed $white-rgba-25;
+      }
+      
     }
   }
   .player__image {

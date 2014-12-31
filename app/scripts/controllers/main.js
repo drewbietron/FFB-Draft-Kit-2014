@@ -36,4 +36,7 @@ angular.module('fantasyFootballApp').controller('MainCtrl', function ($scope, $h
         $scope.isTaken[item] = $scope.isTaken[item]=='error'?'':'error';
     };
 
+    $scope.selected = undefined;
+
+
 });
